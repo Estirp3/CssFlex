@@ -1,0 +1,72 @@
+:root{
+    --font1: "Roboto", sans-serif;
+    --font2: "Roboto Slab";
+    --darck-blue: #212529;
+    --darck-blue2: #313a44;
+    --clear-color: #eceff1;
+    --green: #223336;
+    --green2: #64858a;
+    --greenCardCV: #7bd6e4;
+    --deep-pink: #ef476f;
+    --yellow: #c8ce95;
+    --black: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+    font-size: 20px;
+}
+.casillas h1{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-direction:column;
+    
+}
+.casilla-tr h1{
+    padding: 10px;
+}
+
+.casilla-tr img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--green2);
+    padding: 10px;
+    background-color: var(--clear-color);
+    margin-bottom: 20px;
+  }
+section .card{
+    border: 3px solid var(--black);
+    grid-column: span 2;
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--green);
+  padding: 35px;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    background-color: yellowgreen;
+    padding: 5px;
+    border: 1px solid #fff;
+    /*activacion de flex*/
+    display: flex;
+   /*flex-direction: ;
+   flex-wrap: ;*/
+   
+
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    margin: 1px; 
+}

@@ -1,0 +1,97 @@
+body, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.container {
+    display: flex;
+    min-height: 100vh; /* Altura completa del viewport */
+}
+
+.sidebar {
+    flex-basis: 300px; /* Ancho de la barra lateral */
+    background: #f2f2f2;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para el sidebar */
+}
+
+.profile {
+    border: 1px solid black;
+    padding: 10px; /* Agrega padding para separar el contenido del borde */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace que la imagen del avatar sea redonda */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+/* Si tienes varios íconos en .icons, necesitarás ajustar el estilo */
+/* Para que se parezca más a la imagen proporcionada, podrías necesitar algo como esto: */
+
+.icons {
+    margin-left: auto; /* Alinea los íconos a la derecha */
+    display: flex;
+    gap: 5px; /* Espacio entre íconos */
+}
+
+.icons img {
+    width: 20px; /* Tamaño de los íconos */
+    height: 20px;
+}
+.avatar, .contact-avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.new-chat-button {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-message {
+    text-align: center;
+}
+
+.networking-icon {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Adjust sizes for responsive layout if needed */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        flex: 0 0 auto; /* Let the sidebar take the height of its content */
+    }
+
+    .content {
+        order: -1; /* Bring content to the top on small screens */
+    }
+}
